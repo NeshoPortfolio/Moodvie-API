@@ -1,3 +1,7 @@
+# App Related
+api/.env
+api/uploads
+
 # Logs
 logs
 *.log
