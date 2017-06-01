@@ -1,0 +1,6 @@
+// require hook will bind itself to node's require and automatically compile files on the fly
+// not recommended to be used in production: https://stackoverflow.com/a/36166168
+require("babel-register");
+
+// the target entry point
+require("./../index");

@@ -1,6 +1,7 @@
 # App Related
 api/.env
 api/uploads
+api/dist
 
 # Logs
 logs
