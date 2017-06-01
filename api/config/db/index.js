@@ -1,9 +1,9 @@
-const DEBUG  = require('debug')('dbg:mongodb');
-const path   = require('path');
-const config = require(path.join(__dirname,'../'));
+import dbg from 'debug';
+import config from './../../config';
+import mongoose from 'mongoose';
+import bluebird from 'bluebird';
 
-var mongoose = require('mongoose');
-var bluebird = require('bluebird');
+const DEBUG = dbg('dbg:mongodb');
 
 // make mongoose use bluebird for promises - https://stackoverflow.com/a/40822769
 mongoose.Promise = bluebird;
@@ -18,4 +18,5 @@ db.once('open', function() {
     DEBUG('DB - CONNECTED');
 });
 
-module.exports = mongoose;
+
+export default mongoose;

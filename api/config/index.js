@@ -1,4 +1,5 @@
-const path = require('path');
+import path from 'path';
+
 const config = {};
 
 config.site = {
@@ -34,4 +35,4 @@ config.sessionStore = {
 };
 
 
-module.exports = config;
+export default config;
