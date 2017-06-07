@@ -2,6 +2,7 @@
 api/.env
 api/uploads
 api/dist
+cs.txt
 
 # Logs
 logs
@@ -61,4 +62,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
