@@ -25,12 +25,13 @@
     "express-session": "^1.15.3",
     "express-validator": "^3.2.0",
     "formidable": "^1.1.1",
+    "http-status": "^1.0.1",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "mongoose": "^4.10.4"
   },
   "scripts": {
-    "start": "node bin/dev",
+    "start": "DEBUG=dbg:* node bin/dev",
     "clean": "rimraf dist && mkdir dist",
     "build": "yarn run clean && babel ./ --source-maps --out-dir dist/ --ignore ./node_modules,./.babelrc,.editorconfig,.env,./package.json,./npm-debug.log",
     "production": "yarn run build && node bin/production"

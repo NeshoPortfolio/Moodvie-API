@@ -9,6 +9,7 @@ import morgan from 'morgan';
 
 import config from './../config';
 import db from './../config/db';
+import routes from './routes';
 
 const mongoStore = connectMongo(expressSession);
 const app = express();
@@ -35,9 +36,8 @@ var session = expressSession({
 });
 app.use(session);
 
-// set routes for API - TODO
-// var routes = require(path.join(__dirname, 'routes'));
-// app.use('/api', routes);
+// set routes for API
+app.use('/api', routes);
 
 const server = http.createServer(app);
 
